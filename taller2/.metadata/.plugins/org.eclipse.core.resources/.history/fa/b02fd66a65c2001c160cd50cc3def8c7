@@ -1,0 +1,27 @@
+package practica;
+
+public class Cuenta {
+	
+	private double saldo;
+
+	public Cuenta (double saldoInicial) {
+		if (saldoInicial <= 0) {
+			this.saldo = 0;
+		}else {
+			this.saldo = saldoInicial;
+		}
+		
+	}
+	
+	public double getSaldo() {
+		return saldo;
+	}
+
+	public double abonar(double monto) {
+		this.saldo = this.saldo - monto;
+		return saldo;
+	}
+	
+	
+	
+}

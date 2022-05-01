@@ -1,0 +1,26 @@
+package practica;
+
+public class TestCuenta {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Cuenta cuenta1 = new Cuenta(-20);
+		Cuenta cuenta2 = new Cuenta(50);
+		
+		//mostramos el saldo en pantalla
+		cuenta1.getSaldo();
+		cuenta2.getSaldo();
+		
+		//realizamos operaciones de debito
+		cuenta1.abonar(20);
+		cuenta2.abonar(30.5);
+		
+		//mostramos el saldo en pantalla
+		cuenta1.getSaldo();
+		cuenta2.getSaldo();
+		
+
+	}
+
+}
